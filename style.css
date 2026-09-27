@@ -1,0 +1,1258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+
+    --navy: #071d33;
+    --blue: #087df5;
+    --light: #f4f8fc;
+    --text: #172033;
+    --muted: #6b778c;
+    --purple: #7047e8;
+    --border: #dce5ef;
+
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        sans-serif;
+
+    background: var(--light);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+
+    height: 72px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #061a2d,
+            #0d304d
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+
+    box-shadow:
+        0 3px 14px #0002;
+
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+}
+
+
+nav {
+
+    display: flex;
+
+}
+
+
+nav a {
+
+    padding:
+        24px 17px;
+
+    color: #dbe8f5;
+
+}
+
+
+nav a:hover,
+nav a.active {
+
+    color: white;
+
+    background: #ffffff12;
+
+    border-bottom:
+        3px solid #21a0ff;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    min-height: 430px;
+
+    padding: 70px 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            110deg,
+            #061c31,
+            #0b4675
+        );
+
+}
+
+
+.hero-content {
+
+    max-width: 650px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin:
+        12px 0 20px;
+
+}
+
+
+.hero h1 span {
+
+    color: #20a1ff;
+
+}
+
+
+.hero p {
+
+    margin-bottom: 25px;
+
+}
+
+
+.subtitle {
+
+    color: #087df5;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.hero .subtitle {
+
+    color: #45b4ff;
+
+}
+
+
+.computer-icon {
+
+    font-size: 150px;
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+
+    display: inline-block;
+
+    border: none;
+
+    background: var(--blue);
+
+    color: white;
+
+    padding:
+        11px 20px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+.purple-btn {
+
+    background:
+        var(--purple);
+
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+}
+
+
+.feature {
+
+    text-align: center;
+
+    padding: 15px;
+
+    border-right:
+        1px solid var(--border);
+
+}
+
+
+.feature:last-child {
+
+    border-right: none;
+
+}
+
+
+.feature div {
+
+    font-size: 30px;
+
+}
+
+
+.feature h3 {
+
+    font-size: 16px;
+
+}
+
+
+.feature p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    padding: 55px 25px;
+
+}
+
+
+.section-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        end;
+
+    margin-bottom: 25px;
+
+}
+
+
+.section-header h2 {
+
+    font-size: 30px;
+
+}
+
+
+.section-header a {
+
+    color:
+        var(--blue);
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   PRODUCT
+========================= */
+
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.product-card {
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    transition: 0.2s;
+
+}
+
+
+.product-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 10px 25px #17203315;
+
+}
+
+
+.product-img {
+
+    height: 140px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf5fd,
+            #dceafa
+        );
+
+    border-radius: 8px;
+
+    font-size: 65px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.product-card h3 {
+
+    font-size: 16px;
+
+}
+
+
+.cat {
+
+    font-size: 12px;
+
+    color: var(--muted);
+
+}
+
+
+.price {
+
+    color: var(--blue);
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin:
+        5px 0 10px;
+
+}
+
+
+.product-card button {
+
+    width: 100%;
+
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.info-section {
+
+    max-width: 1180px;
+
+    margin:
+        0 auto 60px;
+
+    padding: 0 25px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.info-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 14px;
+
+}
+
+
+.info-card h2 {
+
+    margin:
+        10px 0;
+
+}
+
+
+.info-card p {
+
+    color:
+        var(--muted);
+
+    margin-bottom: 20px;
+
+}
+
+
+.badge {
+
+    background:
+        #e5f3ff;
+
+    color:
+        var(--blue);
+
+    padding:
+        5px 10px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        11px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.badge.purple {
+
+    background:
+        #eee9ff;
+
+    color:
+        var(--purple);
+
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.container {
+
+    max-width: 1180px;
+
+    margin: auto;
+
+    padding:
+        30px 25px 60px;
+
+}
+
+
+.page-header {
+
+    padding:
+        20px 0 30px;
+
+}
+
+
+.page-header h1 {
+
+    font-size:
+        38px;
+
+}
+
+
+.page-header p:last-child {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================
+   TOOLBAR
+========================= */
+
+.toolbar {
+
+    background:
+        white;
+
+    padding:
+        18px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        10px;
+
+    display:
+        flex;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.toolbar input {
+
+    margin-left:
+        auto;
+
+    width:
+        300px;
+
+    padding:
+        11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        7px;
+
+}
+
+
+.category-list {
+
+    display:
+        flex;
+
+    gap:
+        8px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+
+.category-list button {
+
+    border:
+        1px solid var(--border);
+
+    background:
+        white;
+
+    padding:
+        8px 13px;
+
+    border-radius:
+        20px;
+
+    cursor:
+        pointer;
+
+}
+
+
+.category-list button.active {
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+    padding:
+        24px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.card h2 {
+
+    margin-bottom:
+        16px;
+
+}
+
+
+.card select {
+
+    width:
+        100%;
+
+    padding:
+        11px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        7px;
+
+}
+
+
+/* =========================
+   GRAPH
+========================= */
+
+.theory-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        15px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.theory-card {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        10px;
+
+    padding:
+        18px;
+
+}
+
+
+.theory-card b,
+.theory-card span,
+.theory-card small {
+
+    display:
+        block;
+
+}
+
+
+.theory-card span {
+
+    color:
+        var(--blue);
+
+    font-size:
+        25px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.theory-card small {
+
+    color:
+        var(--muted);
+
+}
+
+
+.graph-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap:
+        20px;
+
+}
+
+
+.graph-canvas {
+
+    height:
+        390px;
+
+    position:
+        relative;
+
+    background:
+        #eef6ff;
+
+    border-radius:
+        10px;
+
+    border:
+        1px dashed #c5d7ea;
+
+}
+
+
+.node {
+
+    position:
+        absolute;
+
+    width:
+        80px;
+
+    height:
+        80px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    font-weight:
+        bold;
+
+    font-size:
+        12px;
+
+    border:
+        4px solid white;
+
+    z-index:
+        2;
+
+}
+
+
+.node.highlight {
+
+    background:
+        var(--purple);
+
+    transform:
+        scale(1.1);
+
+}
+
+
+.edge {
+
+    position:
+        absolute;
+
+    height:
+        3px;
+
+    background:
+        #9db3c9;
+
+    transform-origin:
+        left center;
+
+    z-index:
+        1;
+
+}
+
+
+.algorithm-buttons {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    margin-top:
+        18px;
+
+}
+
+
+.algorithm-buttons .btn {
+
+    flex:
+        1;
+
+}
+
+
+.result-box {
+
+    margin-top:
+        20px;
+
+    background:
+        #edf6ff;
+
+    border-left:
+        4px solid var(--blue);
+
+    padding:
+        15px;
+
+}
+
+
+pre {
+
+    background:
+        #071d33;
+
+    color:
+        #d8efff;
+
+    padding:
+        20px;
+
+    border-radius:
+        8px;
+
+    overflow:
+        auto;
+
+}
+
+
+/* =========================
+   TREE
+========================= */
+
+.tree-layout {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap:
+        20px;
+
+}
+
+
+.tree-node {
+
+    margin:
+        8px 0;
+
+}
+
+
+.tree-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+}
+
+
+.tree-toggle {
+
+    width:
+        28px;
+
+    height:
+        28px;
+
+    border:
+        none;
+
+    background:
+        #e8f2ff;
+
+    color:
+        var(--blue);
+
+    border-radius:
+        6px;
+
+}
+
+
+.tree-label {
+
+    padding:
+        8px 13px;
+
+    background:
+        #f4f8fc;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        8px;
+
+}
+
+
+.tree-label.root {
+
+    background:
+        var(--navy);
+
+    color:
+        white;
+
+}
+
+
+.tree-label.leaf {
+
+    background:
+        #eaf8ef;
+
+}
+
+
+.tree-children {
+
+    margin-left:
+        25px;
+
+    padding-left:
+        15px;
+
+    border-left:
+        2px dashed #b7cbe0;
+
+}
+
+
+.role {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    padding:
+        12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.role b {
+
+    color:
+        var(--blue);
+
+}
+
+
+.path-display {
+
+    margin-top:
+        20px;
+
+    background:
+        #edf6ff;
+
+    padding:
+        15px;
+
+    border-left:
+        4px solid var(--blue);
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background:
+        var(--navy);
+
+    color:
+        #c7d6e5;
+
+    text-align:
+        center;
+
+    padding:
+        25px;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 800px) {
+
+    header {
+
+        padding:
+            0 3%;
+
+    }
+
+
+    nav a {
+
+        padding:
+            24px 7px;
+
+        font-size:
+            12px;
+
+    }
+
+
+    .hero {
+
+        padding:
+            50px 25px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            34px;
+
+    }
+
+
+    .computer-icon {
+
+        display:
+            none;
+
+    }
+
+
+    .features,
+    .product-grid,
+    .theory-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .graph-layout,
+    .tree-layout,
+    .info-section {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .toolbar {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .toolbar input {
+
+        margin-left:
+            0;
+
+        width:
+            100%;
+
+    }
+
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore - Graph Theory</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        💻 TechStore
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            หน้าแรก
+        </a>
+
+        <a href="products.html">
+            สินค้า
+        </a>
+
+        <a class="active"
+           href="graph.html">
+            Graph
+        </a>
+
+        <a href="tree.html">
+            Tree
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="container">
+
+
+<section class="page-header">
+
+    <p class="subtitle">
+        DISCRETE MATHEMATICS
+    </p>
+
+    <h1>
+        Graph Theory
+    </h1>
+
+    <p>
+        ระบบ Graph สำหรับแสดงความสัมพันธ์
+        ของอุปกรณ์คอมพิวเตอร์
+    </p>
+
+</section>
+
+
+
+<section class="theory-grid">
+
+
+<div class="theory-card">
+
+    <b>Vertex</b>
+
+    <span>
+        8 จุด
+    </span>
+
+    <small>
+        แทนอุปกรณ์
+    </small>
+
+</div>
+
+
+
+<div class="theory-card">
+
+    <b>Edge</b>
+
+    <span>
+        10+ เส้น
+    </span>
+
+    <small>
+        แทนความสัมพันธ์
+    </small>
+
+</div>
+
+
+
+<div class="theory-card">
+
+    <b>Path</b>
+
+    <span id="pathCount">
+        -
+    </span>
+
+    <small>
+        เส้นทาง
+    </small>
+
+</div>
+
+
+
+<div class="theory-card">
+
+    <b>Algorithm</b>
+
+    <span>
+        BFS / DFS
+    </span>
+
+    <small>
+        ค้นหา Graph
+    </small>
+
+</div>
+
+
+</section>
+
+
+
+<section class="graph-layout">
+
+
+<div class="card">
+
+    <h2>
+        Graph Visualization
+    </h2>
+
+    <div id="graphCanvas"
+         class="graph-canvas">
+    </div>
+
+    <p class="hint">
+        วงกลม = Vertex | เส้น = Edge
+    </p>
+
+</div>
+
+
+
+<div class="card">
+
+    <h2>
+        ค้นหา Path
+    </h2>
+
+
+    <label>
+        จุดเริ่มต้น
+    </label>
+
+    <select id="startNode">
+    </select>
+
+
+
+    <label>
+        จุดปลายทาง
+    </label>
+
+    <select id="endNode">
+    </select>
+
+
+
+    <div class="algorithm-buttons">
+
+        <button
+            class="btn"
+            onclick="runSearch('BFS')">
+
+            BFS
+
+        </button>
+
+
+        <button
+            class="btn purple-btn"
+            onclick="runSearch('DFS')">
+
+            DFS
+
+        </button>
+
+    </div>
+
+
+
+    <div id="searchResult"
+         class="result-box">
+
+        เลือกจุดเริ่มต้นและปลายทาง
+        แล้วกด BFS หรือ DFS
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+
+<section class="card">
+
+    <h2>
+        Adjacency List
+    </h2>
+
+    <pre id="adjacencyList"></pre>
+
+</section>
+
+
+
+<section class="card">
+
+    <h2>
+        ความหมายของ Graph
+    </h2>
+
+    <p>
+
+        <b>Vertex</b>
+        หมายถึงอุปกรณ์คอมพิวเตอร์แต่ละชนิด
+
+    </p>
+
+    <p>
+
+        <b>Edge</b>
+        หมายถึงความสัมพันธ์ระหว่างอุปกรณ์
+
+    </p>
+
+    <p>
+
+        <b>Path</b>
+        หมายถึงลำดับของ Vertex
+        ที่สามารถเดินผ่าน Edge
+        จากจุดเริ่มต้นไปยังจุดปลายทาง
+
+    </p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    © 2026 TechStore | Graph Theory
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    initGraphPage();
+
+</script>
+
+
+</body>
+</html>

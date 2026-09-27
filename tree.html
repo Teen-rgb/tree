@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore - Tree</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        💻 TechStore
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            หน้าแรก
+        </a>
+
+        <a href="products.html">
+            สินค้า
+        </a>
+
+        <a href="graph.html">
+            Graph
+        </a>
+
+        <a class="active"
+           href="tree.html">
+            Tree
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="container">
+
+
+<section class="page-header">
+
+    <p class="subtitle">
+        DISCRETE MATHEMATICS
+    </p>
+
+    <h1>
+        Tree Structure
+    </h1>
+
+    <p>
+        โครงสร้างต้นไม้สำหรับจัดหมวดหมู่สินค้า
+    </p>
+
+</section>
+
+
+
+<section class="tree-layout">
+
+
+<div class="card">
+
+    <h2>
+        Product Category Tree
+    </h2>
+
+    <div id="treeView"
+         class="tree-view">
+    </div>
+
+</div>
+
+
+
+<div class="card">
+
+    <h2>
+        องค์ประกอบของ Tree
+    </h2>
+
+
+    <div class="role">
+
+        <b>
+            Root
+        </b>
+
+        <span>
+            TechStore
+        </span>
+
+    </div>
+
+
+    <div class="role">
+
+        <b>
+            Parent
+        </b>
+
+        <span>
+            CPU, VGA, RAM, Storage
+        </span>
+
+    </div>
+
+
+    <div class="role">
+
+        <b>
+            Child
+        </b>
+
+        <span>
+            สินค้าในแต่ละหมวด
+        </span>
+
+    </div>
+
+
+    <div class="role">
+
+        <b>
+            Leaf
+        </b>
+
+        <span>
+            สินค้าที่ไม่มีลูก
+        </span>
+
+    </div>
+
+
+    <div class="role">
+
+        <b>
+            Level
+        </b>
+
+        <span>
+            3 ระดับขึ้นไป
+        </span>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+
+<section class="card">
+
+    <h2>
+        Path จาก Root → Leaf
+    </h2>
+
+
+    <select id="treeLeaf"
+            onchange="showTreePath()">
+    </select>
+
+
+    <div id="treePath"
+         class="path-display">
+
+        เลือกสินค้าเพื่อดู Path
+
+    </div>
+
+</section>
+
+
+
+<section class="card">
+
+    <h2>
+        หลักการ Tree ในเว็บไซต์
+    </h2>
+
+    <p>
+
+        <b>Root</b>
+        คือ TechStore
+
+    </p>
+
+    <p>
+
+        <b>Parent</b>
+        คือหมวดหมู่สินค้า
+
+    </p>
+
+    <p>
+
+        <b>Child</b>
+        คือโหนดที่อยู่ภายใต้ Parent
+
+    </p>
+
+    <p>
+
+        <b>Leaf</b>
+        คือสินค้าที่ไม่มีโหนดลูก
+
+    </p>
+
+    <p>
+
+        ตัวอย่าง Path:
+
+        <b>
+            TechStore → CPU → AMD → Ryzen 5 5600
+        </b>
+
+    </p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    © 2026 TechStore | Tree Structure
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    initTreePage();
+
+</script>
+
+
+</body>
+</html>

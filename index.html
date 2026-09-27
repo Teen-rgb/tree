@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - ร้านอุปกรณ์คอมพิวเตอร์</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💻 TechStore</div>
+
+    <nav>
+        <a class="active" href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="graph.html">Graph</a>
+        <a href="tree.html">Tree</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <p class="subtitle">COMPUTER & ACCESSORIES</p>
+
+        <h1>
+            อุปกรณ์คอมพิวเตอร์<br>
+            <span>ครบ จบ ในที่เดียว</span>
+        </h1>
+
+        <p>
+            เว็บไซต์ร้านอุปกรณ์คอมพิวเตอร์
+            ที่นำแนวคิด Graph Theory และ Tree
+            มาประยุกต์ใช้กับระบบ
+        </p>
+
+        <a href="products.html" class="btn">
+            ดูสินค้าทั้งหมด →
+        </a>
+
+    </div>
+
+    <div class="computer-icon">
+        🖥️
+    </div>
+</section>
+
+
+<section class="features">
+
+    <div class="feature">
+        <div>🚚</div>
+        <h3>จัดส่งรวดเร็ว</h3>
+        <p>ระบบจำลองการจัดส่ง</p>
+    </div>
+
+    <div class="feature">
+        <div>🛡️</div>
+        <h3>สินค้าคุณภาพ</h3>
+        <p>รับประกันสินค้า</p>
+    </div>
+
+    <div class="feature">
+        <div>🎧</div>
+        <h3>บริการหลังการขาย</h3>
+        <p>ให้บริการลูกค้า</p>
+    </div>
+
+    <div class="feature">
+        <div>💳</div>
+        <h3>ชำระเงินปลอดภัย</h3>
+        <p>ระบบจำลองการชำระเงิน</p>
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-header">
+
+        <div>
+            <p class="subtitle">FEATURED PRODUCTS</p>
+            <h2>สินค้าขายดี</h2>
+        </div>
+
+        <a href="products.html">ดูทั้งหมด →</a>
+
+    </div>
+
+    <div id="featuredProducts" class="product-grid"></div>
+
+</section>
+
+
+<section class="info-section">
+
+    <div class="info-card">
+
+        <span class="badge">
+            GRAPH THEORY
+        </span>
+
+        <h2>Graph Theory</h2>
+
+        <p>
+            ใช้ Vertex แทนสินค้า และ Edge แทนความสัมพันธ์
+            ระหว่างสินค้า พร้อมระบบค้นหาเส้นทางด้วย BFS และ DFS
+        </p>
+
+        <a href="graph.html" class="btn">
+            ดู Graph
+        </a>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <span class="badge purple">
+            TREE
+        </span>
+
+        <h2>Tree Structure</h2>
+
+        <p>
+            ใช้ Tree จัดหมวดหมู่สินค้า โดยมี Root,
+            Parent, Child และ Leaf
+        </p>
+
+        <a href="tree.html" class="btn purple-btn">
+            ดู Tree
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+    © 2026 TechStore | Discrete Mathematics Project
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+    renderProducts("featuredProducts", 4);
+</script>
+
+</body>
+</html>

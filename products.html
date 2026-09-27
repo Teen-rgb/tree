@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore - สินค้า</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="logo">
+        💻 TechStore
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            หน้าแรก
+        </a>
+
+        <a class="active" href="products.html">
+            สินค้า
+        </a>
+
+        <a href="graph.html">
+            Graph
+        </a>
+
+        <a href="tree.html">
+            Tree
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <section class="page-header">
+
+        <p class="subtitle">
+            PRODUCT CATALOG
+        </p>
+
+        <h1>
+            รายการสินค้า
+        </h1>
+
+        <p>
+            เลือกหมวดหมู่หรือค้นหาสินค้าที่ต้องการ
+        </p>
+
+    </section>
+
+
+    <div class="toolbar">
+
+        <div id="categories"
+             class="category-list">
+        </div>
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="ค้นหาสินค้า..."
+            oninput="filterProducts()"
+        >
+
+    </div>
+
+
+    <div id="allProducts"
+         class="product-grid">
+    </div>
+
+</main>
+
+
+<footer>
+    © 2026 TechStore | Discrete Mathematics Project
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+
+    renderCategories();
+
+    renderProducts("allProducts");
+
+</script>
+
+</body>
+</html>
